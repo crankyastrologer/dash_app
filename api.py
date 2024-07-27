@@ -19,6 +19,7 @@ other_columns = ['gdp_growth', 'house_inventory', 'Diff_house_inventory',
                  'shares', 'Unemployment', 'vacancy_rate', 'Total', 'rent_price']
 base_columns = ['house_price', 'house_price_diff']
 app = Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
+server = app.server
 
 app.layout = [
 
