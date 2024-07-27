@@ -9,13 +9,13 @@ result = html.Div([
                     "So it is better to find the impact of these variables on the variation of house prices each "
                     "month."),
     html.Iframe(
-        srcDoc=open('../graphs/crossval.html', 'r', encoding='utf-8').read(),
+        srcDoc=open('graphs/crossval.html', 'r', encoding='utf-8').read(),
         style={"width": "100%", "height": "600px", "border": "none"}
     ),
     html.P(children="We can see that the gradient boosting regressor has worked better than all other models. "
                     "Now let's see the feature importance of the model."),
     html.Iframe(
-        srcDoc=open('../graphs/best_feature.html', 'r', encoding='utf-8').read(),
+        srcDoc=open('graphs/best_feature.html', 'r', encoding='utf-8').read(),
         style={"width": "100%", "height": "600px", "border": "none"}
     ),
     html.P(children="We can see that the top features are:\n"
